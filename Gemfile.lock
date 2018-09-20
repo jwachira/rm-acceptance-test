@@ -83,8 +83,12 @@ DEPENDENCIES
   capybara
   cucumber
   database_cleaner
+  nokogiri
   page-object
   pry
   rspec
   rspec-nc
   selenium-webdriver
+
+BUNDLED WITH
+   1.16.5
