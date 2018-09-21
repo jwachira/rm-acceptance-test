@@ -9,7 +9,7 @@ module SmokeScreens
     end
 
     def host
-      DEFAULT_HOME
+      SmokeScreens::host
     end
 
     def path
@@ -51,7 +51,7 @@ module SmokeScreens
     end
 
     def attach_host(path_part)
-      "#{SmokeScreens::host if path_part !~ URL_HEADER_PATTERN}#{path_part}"
+      "#{host if path_part !~ URL_HEADER_PATTERN}#{path_part}"
     end
 
     def url
