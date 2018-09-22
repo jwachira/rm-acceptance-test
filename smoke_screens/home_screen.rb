@@ -1,7 +1,7 @@
 module SmokeScreens
   class HomeScreen < BasicScreen
     def path
-      '/premium/products'.freeze
+      '/'.freeze
     end
   end
 end

@@ -19,7 +19,7 @@ class SmokeScreen
       screen_response = screen_instance.valid?
       response &= screen_response
 
-      STDOUT.puts "#{screen.name}: #{screen_response ? 'OK' : 'FAULT' } (#{screen_instance.last_request_url})"
+      STDOUT.puts "#{screen.name}: #{screen_response ? 'OK' : 'FAULT' } (#{screen_instance.status}) (#{screen_instance.last_request_url})"
     end
 
     response
